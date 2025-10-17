@@ -100,6 +100,7 @@ Local Setup
 
 
 git clone https://github.com/Lilpresh-hub/backend-wizard-api-.git
+
 cd backend-wizard-api-
 
 2. Install Dependencies:
@@ -279,7 +280,7 @@ Check out my X post for a deep dive 🐱💻 #BackendWizards #NodeJS #APIs
 👨‍💻 Author
 
 Solomon Precious
-Email: solomonoluwatobi17@gmail.com
+Email: solomonoluwatobi307@gmail.com
 GitHub: Lipresh-hub
 
 Built with ❤️ for Backend Wizards - Stage 0
