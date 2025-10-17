@@ -1,33 +1,18 @@
 
+# 🚀 Backend Wizard API — Stage 0 Task (Node.js + Express)
 
-# Backend Wizard API 🧙‍♂️
+![GitHub last commit](https://img.shields.io/github/last-commit/your-username/backend-wizard-api)
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
+![Express](https://img.shields.io/badge/Express.js-Backend-blue)
+![Railway](https://img.shields.io/badge/Deployed%20On-Railway-purple)
 
-Welcome to **Backend Wizard API**! This API is built with **Node.js** and **Express**, designed to provide a simple endpoint to fetch your user data and a fun cat fact.
+A simple RESTful API for the Backend Wizards Stage 0 Task.  
+The `/me` endpoint returns profile info with a dynamic cat fact fetched from an external API.
 
----
+## Live API URL
+`https://<your-railway-domain>.railway.app/me`
 
-## Author
-
-- **Name:** Solomon Precious  
-- **Email:** solomonoluwatobi307@gmail.com  
-- **Stack:** Node.js / Express  
-
----
-
-## GitHub Repository
-
-[https://github.com/Lilpresh-hub/backend-wizard-api-](https://github.com/Lilpresh-hub/backend-wizard-api-)
-
----
-
-## Live API Endpoint
-
-Fetch your user data in JSON format:
-
-GET https://backend-wizard-api-production.up.railway.app/me
-
-**Sample Response:**
-
+## Response format
 ```json
 {
   "status": "success",
@@ -36,61 +21,48 @@ GET https://backend-wizard-api-production.up.railway.app/me
     "name": "Solomon Precious",
     "stack": "Node.js/Express"
   },
-  "timestamp": "2025-10-17T12:01:13.546Z",
-  "fact": "In an average year, cat owners in the United States spend over $2 billion on cat food."
+  "timestamp": "2025-10-15T12:34:56.789Z",
+  "fact": "Cats sleep for 70% of their lives."
 }
 
-✅ status always returns "success"
+Project Structure
 
-✅ user object contains name, email, and stack
+backend-wizard-api/
+│── src/
+│   │── routes/
+│   │   └── me.js
+│   │── services/
+│   │   └── catService.js
+│   │── app.js
+│── index.js
+│── package.json
+│── .env.example
+│── README.md
 
-✅ timestamp is in ISO 8601 UTC format
+Run locally
 
-✅ fact is dynamically fetched
-
-
-
----
-
-Usage
-
-1. Clone the repo:
-
-
-
-git clone https://github.com/Lilpresh-hub/backend-wizard-api-.git
-
-2. Install dependencies:
-
-
-
+git clone https://github.com/<your-username>/backend-wizard-api
+cd backend-wizard-api
 npm install
+npm run dev
+# then test: curl http://localhost:3000/me
 
-3. Run the server:
+Deploy on Railway
 
-
-
-npm start
-
-4. Open your browser or Postman:
+1. Connect GitHub repo to Railway
 
 
+2. Deploy the project
 
-http://localhost:3000/me
+
+3. Add PORT=3000 if needed
 
 
----
-
-Stage 0 Submission ✅
-
-GitHub repo: Link
-
-Live API: Link
-
-All requirements for Stage 0 are satisfied and verified.
+4. Visit https://<your-railway-domain>.railway.app/me
 
 
 
----
+Author
 
-Made with 💻 by Solomon Precious
+Built by Solomon Precious
+
