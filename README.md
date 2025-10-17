@@ -99,8 +99,8 @@ Local Setup
 
 
 
-git clone https://github.com/Lipresh-hub/backend.git
-cd backend
+git clone https://github.com/Lilpresh-hub/backend-wizard-api-.git
+cd backend-wizard-api-
 
 2. Install Dependencies:
 
